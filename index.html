@@ -6,110 +6,126 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Mihir Dutta | Software Engineer Portfolio" />
   <title>Mihir Dutta | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
-
-    body {
-      background-color: #f9f9f9;
-      color: #1a1a1a;
-      line-height: 1.6;
-    }
-
-    header {
-      padding: 2rem;
-      background-color: #ffffff;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .container {
-      max-width: 960px;
-      margin: auto;
-      padding: 2rem;
-    }
-
-    h1 {
-      font-size: 2rem;
-      font-weight: 700;
-    }
-
-    h2 {
-      margin-top: 2rem;
-      font-size: 1.5rem;
-      font-weight: 600;
-    }
-
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
-
-    .section {
-      margin-bottom: 2rem;
-    }
-
-    .contact a {
-      display: block;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #777;
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <div class="container">
-      <h1>Mihir Dutta</h1>
-      <p>Software Engineer | Backend Developer | Java | Spring Boot | AWS</p>
+<!-- Navigation -->
+<nav id="nav">
+  <ul>
+    <li><a href="#home">Intro</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">What I Do</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#coding">Coding Profiles</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero Section -->
+<section id="home">
+  <div class="hero-content">
+    <h1>Mihir Dutta</h1>
+    <p>Software Engineer | Backend Developer</p>
+    <a href="#about" class="btn">Learn More</a>
+  </div>
+  <div class="hero-image">
+    <img src="assets/images/profile.jpg" alt="Mihir">
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+  <h2>About</h2>
+  <p>Passionate backend developer with experience in Java, Spring Boot, Redis, MySQL, AWS. I build robust APIs and scalable systems.</p>
+</section>
+
+<!-- Services Section -->
+<section id="services">
+  <h2>What I Do</h2>
+  <div class="service-grid">
+    <div class="service-item">
+      <h3>Backend Development</h3>
+      <p>Java, Spring Boot, Microservices, REST APIs</p>
     </div>
-  </header>
+    <div class="service-item">
+      <h3>Cloud & DevOps</h3>
+      <p>AWS, Docker, CI/CD</p>
+    </div>
+  </div>
+</section>
 
-  <main class="container">
-    <section class="section">
-      <h2>About</h2>
-      <p>
-        Passionate backend developer with experience in building scalable systems using Java, Spring Boot, MySQL, Redis, and AWS.
-        Interested in distributed systems, system design, and working on impactful real-world applications.
-      </p>
-    </section>
+<!-- Skills Section -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skill-categories">
+    <div><h4>Languages</h4><span>Java, Python, JavaScript</span></div>
+    <div><h4>Frameworks</h4><span>Spring Boot, Express, React</span></div>
+    <div><h4>Tools</h4><span>Docker, Redis, Git, AWS</span></div>
+  </div>
+</section>
 
-    <section class="section">
-      <h2>Projects</h2>
+<!-- Experience Section -->
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="timeline">
+    <div class="timeline-event">
+      <h3>Software Engineer II – Rakuten</h3>
+      <span>June 2023 – Present</span>
       <ul>
-        <li><strong>Multi-Tenant SaaS App</strong> - Spring Boot, Redis, PostgreSQL, RabbitMQ (in progress)</li>
-        <li><strong>Fitness Tracker API</strong> - RESTful backend for meal/workout tracking (Java + Spring)</li>
-        <li><strong>Job Application Tracker</strong> - MERN stack project with resume parsing & ATS scoring</li>
+        <li>Built scalable microservices in Spring Boot</li>
+        <li>Improved performance of Redis caching layer</li>
       </ul>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section class="section">
-      <h2>Skills</h2>
-      <p><strong>Languages:</strong> Java, JavaScript, SQL, Python</p>
-      <p><strong>Frameworks:</strong> Spring Boot, React, Express</p>
-      <p><strong>Tools:</strong> Git, Docker, Redis, RabbitMQ, AWS, Postman</p>
-    </section>
+<!-- Portfolio Section -->
+<section id="portfolio">
+  <h2>Portfolio</h2>
+  <div class="projects-grid">
+    <div class="project">
+      <img src="assets/images/project1.png" alt="Project 1">
+      <h4>Multi-Tenant SaaS App</h4>
+      <p>Spring Boot, Redis, PostgreSQL</p>
+      <a href="#">View Project</a>
+    </div>
+  </div>
+</section>
 
-    <section class="section contact">
-      <h2>Contact</h2>
-      <a href="mailto:mihirdutta.dev@gmail.com">mihirdutta.dev@gmail.com</a>
-      <a href="https://linkedin.com/in/mihirdutta" target="_blank">LinkedIn</a>
-      <a href="https://github.com/mihirduttaa" target="_blank">GitHub</a>
-    </section>
-  </main>
+<!-- Coding Profiles Section -->
+<section id="coding">
+  <h2>Coding Profiles</h2>
+  <div class="profiles">
+    <a href="#"><img src="assets/icons/codechef.svg" alt="CodeChef"></a>
+    <a href="#"><img src="assets/icons/leetcode.svg" alt="LeetCode"></a>
+  </div>
+</section>
 
-  <footer>
-    <p>© 2025 Mihir Dutta</p>
-  </footer>
+<!-- Contact Section -->
+<section id="contact">
+  <h2>Get In Touch</h2>
+  <form action="https://formspree.io/f/{your-form-id}" method="POST">
+    <input name="name" placeholder="Name" required>
+    <input name="email" type="email" placeholder="Email" required>
+    <textarea name="message" placeholder="Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <div class="social-links">
+    <a href="#"><img src="assets/icons/github.svg" alt="GitHub"></a>
+    <a href="#"><img src="assets/icons/linkedin.svg" alt="LinkedIn"></a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 Mihir Dutta</p>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 
 </html>
