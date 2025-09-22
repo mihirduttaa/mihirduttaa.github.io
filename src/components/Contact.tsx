@@ -10,19 +10,19 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "alex@example.com",
-      href: "mailto:alex@example.com"
+      value: "dutta.mihirr@gmail.com",
+      href: "mailto:dutta.mihirr@gmail.com"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+91 7024267076",
+      href: "tel:+917024267076"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Bangalore, India",
       href: "#"
     }
   ];
@@ -147,24 +147,24 @@ const Contact = () => {
               <Card className="glass-card">
                 <CardContent className="p-8">
                   <h3 className="text-xl font-semibold mb-4 gradient-text">
-                    Available For
+                    Experience & Expertise
                   </h3>
                   <ul className="space-y-2 text-muted-foreground">
                     <li className="flex items-center">
-                      <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
-                      Full-time opportunities
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                      Software Engineer at Rakuten India
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
-                      Freelance projects
+                      Backend Systems & Microservices
                     </li>
                     <li className="flex items-center">
-                      <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
-                      Consulting work
+                      <span className="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>
+                      Legacy System Modernization
                     </li>
                     <li className="flex items-center">
-                      <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
-                      Collaboration
+                      <span className="w-2 h-2 bg-pink-500 rounded-full mr-3"></span>
+                      Team Leadership & Collaboration
                     </li>
                   </ul>
                 </CardContent>

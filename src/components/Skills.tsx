@@ -4,23 +4,23 @@ import { Badge } from '@/components/ui/badge';
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Frontend",
-      skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Vue.js", "SASS"],
+      title: "Languages",
+      skills: ["Java", "PHP", "SQL", "Python", "C", "C++"],
       color: "bg-blue-500/10 text-blue-400 border-blue-400/20"
     },
     {
-      title: "Backend",
-      skills: ["Node.js", "Python", "Express", "FastAPI", "PostgreSQL", "MongoDB"],
+      title: "Frameworks & Libraries",
+      skills: ["Spring", "Hibernate", "Maven", "JUnit", "Symfony", "Payara"],
       color: "bg-green-500/10 text-green-400 border-green-400/20"
     },
     {
-      title: "Tools & DevOps",
-      skills: ["Docker", "AWS", "Git", "CI/CD", "Linux", "Kubernetes"],
+      title: "Cloud & DevOps",
+      skills: ["Docker", "Kubernetes", "Google Cloud", "CI/CD", "ElasticSearch", "Kibana"],
       color: "bg-purple-500/10 text-purple-400 border-purple-400/20"
     },
     {
-      title: "Design & UX",
-      skills: ["Figma", "Adobe XD", "UI/UX Design", "Prototyping", "Design Systems"],
+      title: "Tools & Technologies",
+      skills: ["IntelliJ", "PHPStorm", "Postman", "DBeaver", "Git", "RESTful APIs"],
       color: "bg-pink-500/10 text-pink-400 border-pink-400/20"
     }
   ];
@@ -69,15 +69,15 @@ const Skills = () => {
             <Card className="glass-card inline-block">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-semibold mb-4 gradient-text">
-                  Always Learning
+                  Methodologies & Soft Skills
                 </h3>
                 <p className="text-muted-foreground mb-4">
-                  Currently exploring: AI/ML, Web3, and Advanced Cloud Architecture
+                  Experienced in Agile development, SDLC, and cross-functional collaboration
                 </p>
                 <div className="flex flex-wrap justify-center gap-2">
-                  {["TensorFlow", "Blockchain", "GraphQL", "Serverless"].map((tech) => (
-                    <Badge key={tech} variant="secondary" className="opacity-70">
-                      {tech}
+                  {["Leadership", "Problem Solving", "Communication", "Teamwork", "Agile", "SDLC"].map((skill) => (
+                    <Badge key={skill} variant="secondary" className="opacity-70">
+                      {skill}
                     </Badge>
                   ))}
                 </div>

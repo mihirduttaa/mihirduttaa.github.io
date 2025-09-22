@@ -9,26 +9,26 @@ import project3 from '@/assets/project-3.jpg';
 const Projects = () => {
   const projects = [
     {
-      title: "Analytics Dashboard",
-      description: "A comprehensive analytics platform with real-time data visualization, custom reporting, and advanced filtering capabilities.",
+      title: "RCash R-Point Award System",
+      description: "Led development of a scalable user rewards system rolled out in 3 phases, managing accounts of 15M+ monthly active users with real-time reward tracking.",
       image: project1,
-      tech: ["React", "TypeScript", "Chart.js", "Node.js", "PostgreSQL"],
+      tech: ["Java", "Spring", "Microservices", "MySQL", "RESTful APIs", "Payment Integration"],
       liveUrl: "#",
       githubUrl: "#"
     },
     {
-      title: "E-Commerce Mobile App",
-      description: "Full-featured mobile e-commerce application with seamless user experience, payment integration, and inventory management.",
+      title: "RCash BCP Migration",
+      description: "Migrated 100+ PHP 5.4 batches to PHP 8.3 with Symfony framework. Directed 40+ batch migrations and reduced database load by 15%.",
       image: project2,
-      tech: ["React Native", "Redux", "Firebase", "Stripe API", "Push Notifications"],
+      tech: ["PHP 8.3", "Symfony", "Oracle", "MySQL", "Shell Scripts", "Batch Processing"],
       liveUrl: "#",
       githubUrl: "#"
     },
     {
-      title: "SaaS Landing Platform",
-      description: "Modern SaaS landing page with conversion optimization, A/B testing capabilities, and integrated analytics tracking.",
+      title: "RPay Modernization",
+      description: "Migrated legacy monolithic codebase to microservices architecture, improving processing efficiency by 30% and enhancing scalability.",
       image: project3,
-      tech: ["Next.js", "Tailwind CSS", "Framer Motion", "Vercel", "Analytics"],
+      tech: ["Microservices", "MySQL", "Java", "Spring Boot", "Docker", "Kubernetes"],
       liveUrl: "#",
       githubUrl: "#"
     }

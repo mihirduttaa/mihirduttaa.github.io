@@ -28,10 +28,10 @@ const Hero = () => {
           <div className="animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               Hi, I'm{' '}
-              <span className="gradient-text">Alex Johnson</span>
+              <span className="gradient-text">Mihir Dutta</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Full-Stack Developer crafting beautiful digital experiences with modern technologies
+              Software Engineer specializing in scalable backend systems, microservices architecture, and legacy modernization
             </p>
           </div>
           

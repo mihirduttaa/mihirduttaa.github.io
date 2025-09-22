@@ -3,10 +3,10 @@ import { Badge } from '@/components/ui/badge';
 
 const About = () => {
   const highlights = [
-    "5+ Years Experience",
-    "50+ Projects Completed",
-    "Remote-First",
-    "Open Source Contributor"
+    "2+ Years Experience",
+    "Rakuten India Engineer",
+    "15M+ Users Impacted",
+    "Legacy Migration Expert"
   ];
 
   return (
@@ -18,7 +18,7 @@ const About = () => {
               About <span className="gradient-text">Me</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Passionate developer with a love for creating innovative solutions and beautiful user experiences
+              Results-oriented Software Engineer at Rakuten India with expertise in scalable backend systems
             </p>
           </div>
           
@@ -27,18 +27,18 @@ const About = () => {
               <Card className="glass-card p-8">
                 <CardContent className="p-0">
                   <p className="text-lg leading-relaxed mb-6">
-                    I'm a full-stack developer with a passion for creating seamless digital experiences. 
-                    My journey in tech started 5 years ago, and since then, I've been dedicated to 
-                    building applications that not only function perfectly but also delight users.
+                    I'm a results-oriented Software Engineer with 2+ years of experience developing 
+                    scalable backend systems, modernizing legacy monoliths, and leading technical migrations. 
+                    Currently working at Rakuten India, where I've impacted 15M+ monthly active users.
                   </p>
                   <p className="text-lg leading-relaxed mb-6">
-                    I specialize in React, Node.js, and modern web technologies. When I'm not coding, 
-                    you'll find me exploring new frameworks, contributing to open source projects, 
-                    or sharing knowledge with the developer community.
+                    I specialize in Java, PHP, Spring Framework, and Microservices architecture. 
+                    My expertise includes migrating legacy systems, optimizing database performance, 
+                    and building batch processing systems that handle 600M+ records efficiently.
                   </p>
                   <p className="text-lg leading-relaxed">
-                    I believe in clean code, user-centered design, and the power of collaboration 
-                    to solve complex problems.
+                    I'm passionate about solving complex technical challenges, cross-functional 
+                    collaboration in Agile environments, and continuous learning in software engineering.
                   </p>
                 </CardContent>
               </Card>
@@ -65,15 +65,15 @@ const About = () => {
                   <ul className="space-y-2">
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
-                      Building scalable web applications
+                      Leading RCash R-Point Award System development
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
-                      Exploring AI/ML integration
+                      Microservices architecture & cloud technologies
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
-                      Mentoring junior developers
+                      Team leadership & cross-functional collaboration
                     </li>
                   </ul>
                 </CardContent>
