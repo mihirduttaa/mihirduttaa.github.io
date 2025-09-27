@@ -61,10 +61,7 @@ const Projects = () => {
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <Button size="icon" variant="secondary" className="h-8 w-8">
-                      <ExternalLink className="h-4 w-4" />
-                    </Button>
+                  <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <Button size="icon" variant="secondary" className="h-8 w-8">
                       <Github className="h-4 w-4" />
                     </Button>
@@ -87,14 +84,10 @@ const Projects = () => {
                     ))}
                   </div>
                   
-                  <div className="flex gap-3">
-                    <Button size="sm" variant="default" className="flex-1">
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      Live Demo
-                    </Button>
-                    <Button size="sm" variant="outline" className="flex-1">
+                  <div className="flex justify-center">
+                    <Button size="sm" variant="outline" className="w-full">
                       <Github className="h-4 w-4 mr-2" />
-                      Code
+                      View Code
                     </Button>
                   </div>
                 </CardContent>
