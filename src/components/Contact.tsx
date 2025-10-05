@@ -28,10 +28,10 @@ const Contact = () => {
   ];
 
   const socialLinks = [
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Mail, href: "#", label: "Email" }
+    { icon: Github, href: "https://github.com/mihirduttaa", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/mihirduttaa/", label: "LinkedIn" },
+    { icon: Twitter, href: "https://x.com/exclusivemihir", label: "Twitter" },
+    { icon: Mail, href: "mailto:dutta.mihirr@gmail.com", label: "Email" }
   ];
 
   return (
@@ -136,8 +136,11 @@ const Contact = () => {
                         variant="outline"
                         size="icon"
                         className="hover:shadow-glow transition-all duration-300"
+                        asChild
                       >
-                        <social.icon className="h-5 w-5" />
+                        <a href={social.href} target="_blank" rel="noopener noreferrer">
+                          <social.icon className="h-5 w-5" />
+                        </a>
                       </Button>
                     ))}
                   </div>
