@@ -1,7 +1,6 @@
 import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { ExternalLink, Github } from 'lucide-react';
+import { Briefcase } from 'lucide-react';
 import project1 from '@/assets/project-1.jpg';
 import project2 from '@/assets/project-2.jpg';
 import project3 from '@/assets/project-3.jpg';
@@ -13,24 +12,21 @@ const Projects = () => {
       description: "Led development of a scalable user rewards system rolled out in 3 phases, managing accounts of 15M+ monthly active users with real-time reward tracking.",
       image: project1,
       tech: ["Java", "Spring", "Microservices", "MySQL", "RESTful APIs", "Payment Integration"],
-      liveUrl: "#",
-      githubUrl: "#"
+      company: "Rakuten India"
     },
     {
       title: "RCash BCP Migration",
       description: "Migrated 100+ PHP 5.4 batches to PHP 8.3 with Symfony framework. Directed 40+ batch migrations and reduced database load by 15%.",
       image: project2,
       tech: ["PHP 8.3", "Symfony", "Oracle", "MySQL", "Shell Scripts", "Batch Processing"],
-      liveUrl: "#",
-      githubUrl: "#"
+      company: "Rakuten India"
     },
     {
       title: "RPay Modernization",
       description: "Migrated legacy monolithic codebase to microservices architecture, improving processing efficiency by 30% and enhancing scalability.",
       image: project3,
       tech: ["Microservices", "MySQL", "Java", "Spring Boot", "Docker", "Kubernetes"],
-      liveUrl: "#",
-      githubUrl: "#"
+      company: "Rakuten India"
     }
   ];
 
@@ -62,9 +58,10 @@ const Projects = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <Button size="icon" variant="secondary" className="h-8 w-8">
-                      <Github className="h-4 w-4" />
-                    </Button>
+                    <Badge variant="secondary" className="gap-1.5">
+                      <Briefcase className="h-3 w-3" />
+                      {project.company}
+                    </Badge>
                   </div>
                 </div>
                 
@@ -76,30 +73,18 @@ const Projects = () => {
                     {project.description}
                   </p>
                   
-                  <div className="flex flex-wrap gap-2 mb-4">
+                  <div className="flex flex-wrap gap-2">
                     {project.tech.map((tech) => (
                       <Badge key={tech} variant="outline" className="text-xs">
                         {tech}
                       </Badge>
                     ))}
                   </div>
-                  
-                  <div className="flex justify-center">
-                    <Button size="sm" variant="outline" className="w-full">
-                      <Github className="h-4 w-4 mr-2" />
-                      View Code
-                    </Button>
-                  </div>
                 </CardContent>
               </Card>
             ))}
           </div>
           
-          <div className="text-center mt-12">
-            <Button variant="outline" size="lg" className="animate-fade-in">
-              View All Projects
-            </Button>
-          </div>
         </div>
       </div>
     </section>
