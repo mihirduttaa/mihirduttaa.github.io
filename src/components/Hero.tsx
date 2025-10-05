@@ -39,8 +39,10 @@ const Hero = () => {
             <Button size="lg" className="glow-effect">
               View My Work
             </Button>
-            <Button variant="outline" size="lg">
-              Download CV
+            <Button variant="outline" size="lg" asChild>
+              <a href="/Mihir_Resume.pdf" download="Mihir_Khandekar_Resume.pdf">
+                Download CV
+              </a>
             </Button>
           </div>
           
