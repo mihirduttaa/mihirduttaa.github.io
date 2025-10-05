@@ -45,11 +45,17 @@ const Projects = () => {
           
           <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8">
             {projects.map((project, index) => (
-              <Card 
-                key={project.title} 
-                className={`glass-card group hover:shadow-glow transition-all duration-300 overflow-hidden animate-scale-in`}
-                style={{ animationDelay: `${index * 0.2}s` }}
+              <a 
+                href="/Mihir_Resume.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                key={project.title}
+                className="block"
               >
+                <Card 
+                  className={`glass-card group hover:shadow-glow transition-all duration-300 overflow-hidden animate-scale-in cursor-pointer`}
+                  style={{ animationDelay: `${index * 0.2}s` }}
+                >
                 <div className="relative overflow-hidden">
                   <img 
                     src={project.image} 
@@ -82,6 +88,7 @@ const Projects = () => {
                   </div>
                 </CardContent>
               </Card>
+              </a>
             ))}
           </div>
           
