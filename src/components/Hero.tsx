@@ -36,8 +36,8 @@ const Hero = () => {
           </div>
           
           <div className="animate-slide-in-left flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-            <Button size="lg" className="glow-effect">
-              View My Work
+            <Button size="lg" className="glow-effect" asChild>
+              <a href="#projects">View My Work</a>
             </Button>
             <Button variant="outline" size="lg" asChild>
               <a href="/Mihir_Resume.pdf" download="Mihir_Dutta_Resume.pdf">
