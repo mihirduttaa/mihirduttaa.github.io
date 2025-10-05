@@ -40,7 +40,7 @@ const Hero = () => {
               View My Work
             </Button>
             <Button variant="outline" size="lg" asChild>
-              <a href="/Mihir_Resume.pdf" download="Mihir_Khandekar_Resume.pdf">
+              <a href="/Mihir_Resume.pdf" download="Mihir_Dutta_Resume.pdf">
                 Download CV
               </a>
             </Button>
