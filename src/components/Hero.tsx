@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowDown, Github, Linkedin, Mail, Twitter } from 'lucide-react';
 import heroBg from '@/assets/hero-bg.jpg';
 
 const Hero = () => {
@@ -47,14 +47,25 @@ const Hero = () => {
           </div>
           
           <div className="animate-slide-in-right flex items-center justify-center gap-6">
-            <Button variant="ghost" size="icon" className="hover:text-primary">
-              <Github className="h-6 w-6" />
+            <Button variant="ghost" size="icon" className="hover:text-primary" asChild>
+              <a href="https://github.com/mihirduttaa" target="_blank" rel="noopener noreferrer">
+                <Github className="h-6 w-6" />
+              </a>
             </Button>
-            <Button variant="ghost" size="icon" className="hover:text-primary">
-              <Linkedin className="h-6 w-6" />
+            <Button variant="ghost" size="icon" className="hover:text-primary" asChild>
+              <a href="https://www.linkedin.com/in/mihirduttaa/" target="_blank" rel="noopener noreferrer">
+                <Linkedin className="h-6 w-6" />
+              </a>
             </Button>
-            <Button variant="ghost" size="icon" className="hover:text-primary">
-              <Mail className="h-6 w-6" />
+            <Button variant="ghost" size="icon" className="hover:text-primary" asChild>
+              <a href="https://x.com/exclusivemihir" target="_blank" rel="noopener noreferrer">
+                <Twitter className="h-6 w-6" />
+              </a>
+            </Button>
+            <Button variant="ghost" size="icon" className="hover:text-primary" asChild>
+              <a href="mailto:dutta.mihirr@gmail.com">
+                <Mail className="h-6 w-6" />
+              </a>
             </Button>
           </div>
         </div>
